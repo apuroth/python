@@ -1,0 +1,153 @@
+#! /usr/bin/perl
+
+   #@ use strict;
+    #use warnings;
+    
+	#print "Hello, world!\n";
+	#print 12fred34 * 4;
+	#print "Hello, world END!\n";
+	#print 'what a fucking day \n';
+	#print 'what a fucking day \\\n';
+	#print "the last character of this string is a quote mark:\"";
+	#print 10**3;
+	#@lines= `perldoc ¨Cu ¨Cf atan2`;
+	#foreach(@lines){
+	#s/\w<([^>]+)/\U$1/g;
+	#print;
+	#}
+#	my $fred = 17;
+#	my $test = $fred + 4;
+	
+	#print $test;
+	
+	
+	
+#	my $what ="what test is test";
+#	my $n = 3;
+	#print "fate are $n $whats.\n";
+	#print "fate are $n ${what}s.\n";
+	
+	#$name = "frad";
+	#$is_bigger = $name gt 'fred';
+	#if($is_bigger){
+	#	print "'$name' comes after 'fred' in sorted order.\n";
+	#}else{
+	#	print "'$name' does not come after 'fred'.\n";
+    #		print "Maybe it's the same string, in fact.\n";
+	#}
+	
+	#$madonna = undef;
+	 
+	#if (defined ($madonna)) {
+	#	print "The input was $madonna";
+	#}else{
+	#	print "No input available!\n";
+	#}
+	
+	#print "This is answer : ", 6 * 7, "\n";
+	
+	#$code_point = ord('?');
+	
+	#print "Code_point=$code_point \n";
+	
+#	my @rocks = qw{flintstone slate normalstone};
+	#print "quartz @rocks limeston\n";
+	
+	#@fred = qw(eating rocks is wrong);
+	
+	#$fred = "right";
+	#$x = "This is $fred[3].\n";
+	#$z = "This is ${fred}[3].\n";
+	#$zz = "This is $fred"."[3].\n";
+	#$y = "This is $fred\[3].\n";
+	#print $x, $z,$zz,$y;
+	
+#	foreach my $rock (@rocks){
+	    #print "One rock is $rock.\n"
+#	}
+	
+#	foreach my $rock (qw/rock1 rock2 rock3/){
+	    #print "Rock number is $rock.\n";
+#	}
+	
+#	foreach (1..10) {
+	    #print "Count to $_!\n";
+#	}
+	
+	#my @rocks = qw{bedrock slate rubble granite};
+#	while ( my( $index, $value ) = each @rocks){
+	    #print "$index: $value\n";
+#	}
+	
+#	foreach my $index ( 0..$#rocks ) {
+	    #print "$index: $rocks[$index]\n";
+#	}
+#	
+#	my @people = qw /fred barney betty/;
+#	my @sorted = sort @people;
+#	my $number = @people;
+#	
+	#print "Count is $number.\n";
+	#print "Count is @people.\n";
+	
+#	sub pirntrokc {
+#	    my @rocks = qw(talc quartz jade obsidina);
+#	
+#	    print "Have ", scalar @rocks," rocks.\n";
+#	}
+	
+	#@lines = <STDIN>;
+	
+	#print @lines;
+
+#	my @test = qw /pirntrokc barney beeyy/;
+#	print "result is", @test,".\n";
+#	
+#	print 3*(2+3);
+#	print "\n";
+	
+#	printf "%g,%g,%g\n", 1/3,51/17,51**17;
+	
+	#printf "%-15s\n","filnits";
+	#printf "%1.9f%%\n",2/3;
+	
+	#my @items = qw/wilian dino pebby/;
+	#my $format = "The items are:\n".("%-10s\n" x @items);
+	#printf $format ,@items;
+	
+	#open CONFIG, 'dino';
+
+	#open my $rock_fh, '>>', 'rock.txt'
+		#or die "Could not open rock.txt:$!";
+	#foreach my $rock ( qw (slate lava granite)) {
+	#	say $rock_fh $rock
+	#}	
+	#print $rock_fh "limestone\n";
+	#close $rock_fh;
+	
+	#foreach my $person (qw / barney fred /) {
+	#	print "I've heard of $person $family_name{$person}.\n";
+	#}
+	
+	#$family_name{'fred'} = 'flinstone';
+	#$family_name{'barney'} = 'rubble';
+	#print $family_name{'barney'}."\n";
+	
+	%some_hash = ('foo', undef, 'bar', 12.3, 2.7, 'hello',
+					'william', 1.42e33, 'betty', "bye");
+	#my %s_hash = reverse %some_hash;
+	@any_array = %some_hash;
+	print "@any_array\n";
+	
+	while (($key, $value) = each %some_hash) {
+		print "$key => $value\n";
+	}
+	
+	print "\n";
+	
+	foreach $key (sort keys %some_hash) {
+		$value = $some_hash{$key};
+		print "$key => $value\n";
+	}
+	
+	print "PATH is $ENV{PATH}\n";

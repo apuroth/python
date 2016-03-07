@@ -1,0 +1,12 @@
+os.name         #字符串，正在使用的平台
+os.getcwd()     #得到当前工作路径
+os.getenv()     #读取环境变量
+os.putenv()     #设置环境变量
+os.listdir()    #返回指定目录下所有文件和目录名
+os.remove()     #删除一个文件或者目录
+os.system()     #运行shell命令
+os.linesep      #当前平台使用的终止符
+os.path.split() #返回目录名和文件名
+os.path.isfile()#检测路径是否为文件
+os.path.isdir() #检测路径是否为目录
+os.path.exists()#检测路径是否存在

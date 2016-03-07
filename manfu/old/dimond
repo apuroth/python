@@ -1,0 +1,20 @@
+#! /usr/bin/perl
+
+#while(<>) {
+#	chomp;
+#	print "why $_\n";
+#}
+
+#use 5.010;
+
+#my $names = 'Fred or Barney';
+#if ( $names =~ m/(?<name1>\w+) (and|or) (?<name2>\w+)/ ) {
+#	say "I saw $+{name1} and $+{name2}";
+#}
+
+#$_ = "Hello there, neighbor!";
+#my($first, $second, $third) = /(\S+) (\S+), (\S+)/;
+#print "$second is my $third\n";
+
+$_ = "I'm much better\nthan Barney is\nat bowling, \nWilliam.\n";
+print "Found 'William' at start of line\n" if /^william\b/im;
